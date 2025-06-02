@@ -40,5 +40,4 @@ public class BookReservationController {
         bookReservationService.returnBook(id);
         return new ResponseEntity<>("Book has been returned.", HttpStatus.OK);
     }
-
 }
