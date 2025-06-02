@@ -15,12 +15,12 @@ import lombok.*;
 @Getter
 @Setter
 @Table(name="tbl_user")
-public abstract class User extends BaseEntity {
+public class User extends BaseEntity {
     @Id
     private String id;
-    @Column(name="password", nullable=false, unique = true)
+    @Column(name="password", nullable=false)
     private String password;
-    @Column(name = "username", nullable = false)
+    @Column(name = "username", nullable = false, unique=true)
     private String username;
     @Column(name="photo", nullable = true)
     private String photo;

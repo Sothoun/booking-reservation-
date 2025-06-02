@@ -18,3 +18,5 @@
 - http://localhost:8083/swagger-ui/index.html (Swagger UI)
 
 # Noted: if you run not you can delete folder target and Run again
+# Java version 21
+# Spring Boot 3.3.12

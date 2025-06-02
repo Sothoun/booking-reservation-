@@ -21,7 +21,7 @@ import java.util.List;
 public class BookReservationController {
     @Autowired
     private BookReservationService bookReservationService;
-    @Qualifier("messageSource")
+
     @Autowired
     private MessageSource messageSource;
 

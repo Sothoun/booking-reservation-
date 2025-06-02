@@ -28,11 +28,11 @@ public class JwtAuthFilter extends OncePerRequestFilter {
     private UserDetailsServiceImpl userDetailsServiceImpl;
 
     private final List<AntPathRequestMatcher> publicMatchers = Arrays.asList(
+            new AntPathRequestMatcher("/error"),
             new AntPathRequestMatcher("/api/v1/login"),
-            new AntPathRequestMatcher("/api/v1/register"),
+            new AntPathRequestMatcher("/api/v1/users/register"), // Corrected path
             new AntPathRequestMatcher("/swagger-ui/**"),
-            new AntPathRequestMatcher("/v3/api-docs/**"),
-            new AntPathRequestMatcher("/error") // Good to include Spring Boot's error page
+            new AntPathRequestMatcher("/v3/api-docs/**")
     );
 
     @Override
